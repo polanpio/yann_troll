@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <title>Yann Troll</title>
+</head>
+<body>
+  <div class="container">
+    <div class="birthday-gift">
+      <div class="gift">
+        <input id='click1' type='checkbox'>
+        <label class='click' for='click1'></label>
+        <div class="wishes">Not here!</div>
+      </div>
+    </div>
+    <div class="birthday-gift">
+      <div class="gift">
+        <input id='click2' type='checkbox'>
+        <label class='click' for='click2'></label>
+        <div class="wishes">You wish!</div>
+      </div>
+    </div>
+    <div class="birthday-gift">
+      <div class="gift">
+        <input id='click3' type='checkbox'>
+        <label class='click' for='click3'></label>
+        <div class="wishes">Yeah right..</div>
+      </div>
+    </div>
+    <div class="birthday-gift">
+      <div class="gift">
+        <input id='click4' type='checkbox'>
+        <label class='click' for='click4'></label>
+        <div class="wishes">Try next one!</div>
+      </div>
+    </div>
+    <div class="birthday-gift">
+      <div class="gift">
+        <input id='click5' type='checkbox'>
+        <label class='click' for='click5'></label>
+        <div class="wishes">Really? Here?</div>
+      </div>
+    </div>
+    <div class="birthday-gift">
+      <div class="gift">
+      <input id='click6' type='checkbox'>
+      <label class='click' for='click6'></label>
+      <div class="wishes">Bad luck!</div>
+      </div>
+    </div>
+    <div class="birthday-gift">
+      <div class="gift">
+        <input id='click7' type='checkbox'>
+        <label class='click' for='click7'></label>
+        <div class="wishes">Give up!</div>
+      </div>
+    </div>
+    <div class="birthday-gift">
+      <div class="gift">
+        <input id='click8' type='checkbox'>
+        <label class='click' for='click8'></label>
+        <div class="wishes">One more!</div>
+      </div>
+    </div>
+    <div class="birthday-gift">
+      <div class="gift">
+        <input id='click9' type='checkbox'>
+        <label class='click' for='click9'></label>
+        <div class="wishes">Happy Birthday!</div>
+        <div class="sparkles">
+          <div class="spark1"></div>
+          <div class="spark2"></div>
+          <div class="spark3"></div>
+          <div class="spark4"></div>
+          <div class="spark5"></div>
+          <div class="spark6"></div>
+        </div>
+      </div>
+    </div>
+    <div class="birthday-gift">
+      <div class="gift">
+        <input id='click10' type='checkbox'>
+        <label class='click' for='click10'></label>
+        <div class="wishes" id="coffee"><span>Secret coffee</span><br>☕</div>
+      </div>
+    </div>
+  </div>
+  <script src="confetti.js"></script>
+  <script>
+    const checkbox = document.getElementById("click9");
+    checkbox.addEventListener('change', (event) => {
+      if (event.currentTarget.checked) {
+        confetti.start();
+      } else {
+        confetti.stop();
+      }
+    })
+  </script>
+</body>
+</html>
